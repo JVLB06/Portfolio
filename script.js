@@ -1,5 +1,5 @@
 // script.js
-document.querySelectorAll('.navbar button').forEach(button => {
+document.querySelectorAll('.bar button').forEach(button => {
     button.addEventListener('click', () => {
       const target = document.querySelector(button.dataset.target);
       if (target) {
