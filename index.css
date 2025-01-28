@@ -81,6 +81,9 @@ body, html {
     cursor: pointer;
     font-size: 16px;
   }
+  .home button:hover{
+    background-color: rgb(0,0,120);
+  }
   .texto{
     color: white;
     background: none;
@@ -108,6 +111,8 @@ body, html {
     padding: 50px;
   }
   .image img{
+    border-color: rgb(255, 87, 34);
+    border-style:groove;
     height: 500px;
     width: auto;
     border-radius: 500px;
@@ -145,10 +150,29 @@ body, html {
     flex-direction: column; /* Coloca imagem e texto em coluna */
     justify-content: center; /* Centraliza verticalmente */
     align-items: center; /* Centraliza horizontalmente */
-    background-color: rgb(255, 87, 34);
+    background-color: rgb(30,150,243,0.5);
     padding: 20px; /* Espaçamento interno */
     box-sizing: border-box; /* Inclui padding dentro do tamanho */
     text-align: center; /* Centraliza o texto */
+  }
+  .projeto h3{
+    color:white;
+  }
+  .projeto span{
+    color: white;
+  }
+  .a{
+    color: inherit;
+    text-decoration:none;
+  }
+  a span::after {
+    content: "\2197"; /* Código ou símbolo da seta */
+    margin-left: 8px; /* Espaço entre o texto e a seta */
+    color: inherit; /* Usa a mesma cor do link */
+    font-size: 18px; /* Ajusta o tamanho da seta, se necessário */
+  }
+  .a:hover{
+    color: rgb(255, 87, 34);
   }
   .pmig{
     height: 300px;
