@@ -11,6 +11,14 @@ body, html {
     scrollbar-width: none; /* Firefox: Remove a barra */
     -ms-overflow-style: none; /* Internet Explorer: Remove a barra */
   }
+  h1, h2, h3, h4, h5, h6{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+  }
+  p, body, span{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
   body::-webkit-scrollbar {
     display: none; /* Chrome, Edge e Safari: Remove a barra */
   }
@@ -160,6 +168,10 @@ body, html {
   }
   .projeto span{
     color: white;
+  }
+  .p {
+    color: inherit;
+    text-align: justify;
   }
   .a{
     color: inherit;
