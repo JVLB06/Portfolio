@@ -1,0 +1,367 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(18, 18, 18);
+    background-image:url("fundo_preto.png");
+    background-size: contain;
+    background-repeat: repeat;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Suaviza a rolagem */
+    overflow: auto; /* Mantém a funcionalidade de rolagem */
+    scrollbar-width: none; /* Firefox: Remove a barra */
+    -ms-overflow-style: none; /* Internet Explorer: Remove a barra */
+  }
+  body::-webkit-scrollbar {
+    display: none; /* Chrome, Edge e Safari: Remove a barra */
+  }
+  .bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+    background-color: rgb(0,0,120);
+    display:flex;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+  }
+  .nome{
+    width: 100%;
+    margin:auto;
+    padding-right: 60px;
+    padding-left: 20px;
+    justify-content: left;
+    background: none;
+    font-size: 18px;
+    color:rgb(255, 87, 34);
+  }
+  .head_button{
+    background: none;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .head_button:hover{
+    background-color: rgb(33,150,243);
+    color: rgb(38,38,38);
+  }
+  .lingua{
+    display:flex;
+    padding-left: 300px;
+    margin-right: 40px;
+  }
+  .language{
+    font-size: 15px;
+    background: none;
+    color: white;
+    border: none;
+    cursor:pointer;
+    padding-left: 20px;
+  }
+  .language img{
+    width: 50px;
+  }
+  .home{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding-top: 0px;
+    background: none;
+    padding-bottom: 300px;
+  }
+  .home button{
+    background-color: rgb(33,150,243);
+    color: white;
+    border: 10;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .texto{
+    color: white;
+    background: none;
+    padding-top: 150px;
+    margin: 100px;
+    justify-content: center;
+  }
+  .texto h1{
+    color: rgb(33,150,243);
+  }
+  .text{
+    color: white;
+    background: none;
+    padding-top: 150px;
+    margin: 100px;
+    justify-content: center;
+  }
+  .text h1{
+    color: rgb(255, 87, 34);
+  }
+  .image{
+    color:white;
+    background: none;
+    margin-top:80px;
+    padding: 50px;
+  }
+  .image img{
+    height: 500px;
+    width: auto;
+    border-radius: 500px;
+  }
+  .sobre{
+    background-color: rgb(0,0,120);
+    display: flex;
+    margin: 40px;
+  }
+  .sobre img{
+    height: 770px;
+  }
+  .projects{
+    display: grid;
+    justify-content: center;
+  }
+  .projects h1{
+    color: white;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    gap: 15px;
+    padding: 30px;
+  }
+  .projeto {
+    width: 350px; /* Largura fixa para alinhamento */
+    height: 350px; /* Altura fixa para alinhamento */
+    display: flex; /* Use flexbox para centralizar conteúdo */
+    flex-direction: column; /* Coloca imagem e texto em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    background-color: rgb(255, 87, 34);
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding dentro do tamanho */
+    text-align: center; /* Centraliza o texto */
+  }
+  .pmig{
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+  }
+  .pimg img{
+    padding-bottom: 10px;
+    max-width: 100%; /* Garante que a imagem não ultrapasse os limites */
+    max-height: 240px; /* Limita a altura da imagem */
+    min-height: 180px;
+    min-width: 50%;
+    object-fit: contain; /* Garante que a imagem mantenha a proporção */
+  }
+  
+  .projeto:hover {
+    background-color: rgb(33, 150, 243);
+  }
+    .skills{
+    padding:50px;
+    background: linear-gradient(50deg, rgb(0,0,120), rgb(30,150,243));
+    display:flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .breve-lista{ /*Controle de quebra de linha */
+    display:inline-block;
+    background-color: rgb(33,150,243);
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 200px;
+    padding:50px;
+    width: auto;
+    max-width: 100%;
+  }
+  .lista{
+    display: flex;
+    gap: 30px;
+  }
+  .small-list{
+    display: inline-block;
+    background: none;
+    margin:10px;
+  }
+  .small-list h5{
+    color:white;
+    justify-content: center;
+    font-size: 16px;
+  }
+  .breve-lista h1{
+    background-color: rgb(255,255,255, 0.3);
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: rgb(255, 87, 34);
+    margin-bottom: 38px;
+  }
+  .img-lista{
+    display:flex;
+    background-color: white;
+    border-radius: 20px;
+  }
+  .img-lista img{
+    max-width: 70px;
+    max-height: 100%;
+    min-width: 50px;
+    min-height: 50%;
+    padding: 10px;
+    object-fit: contain;
+  }
+
+  .contact{
+    padding-top: 10px;
+    background: linear-gradient(180deg, rgb(33,150,243), rgb(0,0,120));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+  }
+  .contact h1{
+    color: white
+  }
+  .redes{
+    justify-content: center;
+    background: none;
+    display: flex;
+  }
+  .chama{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Alinha itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    justify-content: center; /* Centraliza verticalmente */
+  }
+  .chama h3{
+    color: white;
+  }
+  .chama img{
+    max-height: 80px;
+    max-width: 100%;
+    justify-content: center;
+  }
+  
+
+
+
+  /*Responsivo em telas menores também*/
+  /* Para telas menores que 1024px (tablets e laptops pequenos) */
+@media (max-width: 1024px) {
+    .bar {
+      flex-direction: column; /* Coloca os itens da barra em coluna */
+      padding: 10px 0;
+    }
+    
+    .nome {
+      text-align: center; /* Centraliza o texto do nome */
+      padding-right: 0;
+      padding-left: 0;
+    }
+  
+    .lingua {
+      justify-content: center; /* Centraliza os botões de idioma */
+      padding-left: 0;
+      margin-right: 0;
+    }
+  
+    .home {
+      flex-direction: column; /* Ajusta os botões em coluna */
+      padding-bottom: 150px; /* Reduz o espaço */
+    }
+  
+    .texto {
+      margin: 20px; /* Margem menor para textos */
+      padding-top: 50px;
+    }
+  
+    .image img {
+      height: 300px; /* Reduz o tamanho da imagem */
+    }
+  
+    .sobre img {
+      height: 500px; /* Reduz a altura da imagem sobre */
+    }
+  }
+  
+  /* Para telas menores que 768px (smartphones) */
+  @media (max-width: 768px) {
+    .display {
+      flex-direction: column; /* Empilha os itens */
+      gap: 10px; /* Reduz o espaço entre itens */
+    }
+  
+    .projeto {
+      padding: 50px; /* Reduz o padding dos projetos */
+    }
+  
+    .projeto img {
+      width: 150px; /* Ajusta o tamanho das imagens do projeto */
+    }
+  
+    .projects h1 {
+      font-size: 24px; /* Reduz o tamanho da fonte do título */
+      text-align: center;
+    }
+  
+    .skills {
+      flex-direction: column; /* Empilha as habilidades */
+      padding: 20px;
+    }
+  
+    .contact h1 {
+      font-size: 20px; /* Reduz o tamanho da fonte do título */
+      text-align: center;
+    }
+  
+    .redes {
+      flex-direction: column; /* Empilha as redes sociais */
+      gap: 10px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  
+  /* Para telas menores que 480px (smartphones pequenos) */
+  @media (max-width: 480px) {
+    .head_button {
+      font-size: 12px; /* Reduz o tamanho dos botões do cabeçalho */
+      padding: 5px 10px;
+    }
+  
+    .language img {
+      width: 30px; /* Ajusta o tamanho dos ícones de idioma */
+    }
+  
+    .image img {
+      height: 200px; /* Reduz ainda mais a imagem principal */
+    }
+  
+    .texto h1 {
+      font-size: 20px; /* Ajusta o tamanho do título */
+    }
+  
+    .projeto {
+      padding: 20px; /* Reduz o padding */
+    }
+  
+    .projeto img {
+      width: 120px; /* Ajusta o tamanho das imagens do projeto */
+    }
+  }
+  
