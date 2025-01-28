@@ -1,46 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 20px;
-        }
-        a {
-            text-decoration: none;
-            color: #007acc;
-            font-size: 18px;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Meu Portfólio</h1>
-        <p>Bem-vindo ao meu portfólio! Aqui estão os links para meus projetos e arquivos para download:</p>
-    </div>
-</body>
-</html>
+    <html lang="pt">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Meu Portfólio</title>
+            <link rel="stylesheet" href="index.css">
+        </head>
+        <body>
+            <nav class="bar">
+                <span class="nome">João V. LELLIS BUTZEN</span>
+                <button data-lang="pt" data-target="#home" class="head_button">Home</button>
+                <button data-lang="pt" data-target="#sobre" class="head_button">Sobre</button>
+                <button data-lang="pt" data-target="#projects" class="head_button">Projetos</button>
+                <button data-lang="pt" data-target="#skills" class="head_button">Habilidades</button>
+                <button data-lang="pt" data-target="#contact" class="head_button">Contato</button>
+                <button data-lang="pt" data-target="#extra" class="head_button">Extras</button>
+                <button data-lang="en" data-target="#home" class="head_button">Home</button>
+                <button data-lang="en" data-target="#sobre" class="head_button">About</button>
+                <button data-lang="en" data-target="#projects" class="head_button">Projects</button>
+                <button data-lang="en" data-target="#skills" class="head_button">Skills</button>
+                <button data-lang="en" data-target="#contact" class="head_button">Contact</button>
+                <button data-lang="en" data-target="#extra" class="head_button">Additional</button>
+                <div class="lingua">
+                    <button id="pt-btn" class="language"><img src="Adicionais/brasil_flag.png"></button>
+                    <button id="en-btn" class="language"><img src="Adicionais/eua_flag.png"></button>
+                </div>
+                </nav>
+            <div class="home" id="home">
+                <!--- Introdução-->
+                <div class="texto">  <!-- Apresentação -->
+                    <h3 data-lang="pt">Olá, eu sou o</h3>
+                    <h3 data-lang="en">Hello! I am</h3>
+                    <h1>João BUTZEN</h1>
+                    <h2 data-lang="pt">Desenvolvedor JR backend</h2>
+                    <h2 data-lang="en">Back-end JR developer</h2>
+                    <button data-lang="pt" class="download-btn">Baixar CV</button>
+                    <button data-lang="en" class="download-btn">Download CV</button>
+                </div>
+                <div class="image"> <!-- Imagem -->
+                    <img src="Perfil/main_image.jpeg"></img>
+                </div>
+            </div>   
+            <div class="sobre" id="#sobre">
+                <!--- Sobre mim-->
+                <div class="img">
+                    <img src="Perfil/imagem_ar_livre.jpeg"></img>
+                </div>
+                <div class="text"> <!-- Explicação -->
+                    <h1 data-lang="pt">Sobre mim</h1>
+                    <h1 data-lang="en">About me</h1>
+                    <span data-lang="pt">Um pouco sobre mim</span>
+                    <span data-lang="en">Um pouco sobre mim</span>
+                </div>
+            </div>
+            <div class="projects" id="projects">
+                <h1 data-lang="pt">Meus projetos</h1>
+                <h1 data-lang="en">My Projects</h1>
+                <div class="display">
+                    <!--- Projetos-->
+                    <div class="projeto">
+                        <div class="pimg"><img src="Adicionais/leitor_financa.png"></div>
+                        <h3 data-lang="pt">Leitor de finanças</h3>
+                        <h3 data-lang="en">Finances reader</h3>
+                        <a href="https://github.com/JVLB06/Leitor_financa"><span>Github</span></a>
+                    </div>
+                    <div class="projeto">
+                        <div class="pimg"><img src="Adicionais/CRUD.web.png"></div>
+                        <h3>CRUD Web</h3>
+                        <a href="https://github.com/JVLB06/CRUD.web"><span>Github</span></a>
+                    </div>
+                    <div class="projeto">
+                        <div class="pimg"><img src="Adicionais/cobrinha_logo.png"></div>
+                        <h3 data-lang="pt">Jogo Cobrinha</h3>
+                        <h3 data-lang="en">Snake Game</h3>
+                        <a href="https://github.com/JVLB06/Jogo_da_cobrinha"><span>Github</span></a>
+                    </div>
+                    <div class="projeto">
+                        <div class="pimg"><img src="Adicionais/github_logo.png"></div>
+                        <h3>Toppagro</h3>
+                        <a href="https://github.com/JVLB06/Topaggro"><span>Github</span></a>
+                    </div>
+                    <div class="projeto">
+                        <div class="pimg"><img src="Adicionais/github_logo.png"></div>
+                        <h3>FinMeta</h3>
+                        <span>Github</span>
+                    </div>
+                    <div class="projeto">
+                        <div class="pimg"><img src="Adicionais/cursed_kingdom.png"></div>
+                        <h3>Cursed Kingdom</h3>
+                        <a href="https://github.com/JVLB06/Cursed_Kingdom"><span>Github</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="skills" id="skills">
+                <!--- Habilidades-->
+                <div class="breve-lista">
+                    <h1 data-lang="pt">Conhecimentos Técnicos</h1>
+                    <h1 data-lang="en">Hard Skills</h1>
+                    <div class="lista">
+                        <div class="small-list">
+                            <h5 data-lang="pt">Python - Intermediário</h5>
+                            <h5 data-lang="pt">Selenium</h5>
+                            <h5 data-lang="pt">Pandas</h5>
+                            <h5 data-lang="pt">PySimpleGUI</h5>
+                            <h5 data-lang="pt">Inglês - Avançado</h5>
+                            <h5 data-lang="pt">Excel - Intermediário</h5>
+
+                            <h5 data-lang="en">Python - Intermediate</h5>
+                            <h5 data-lang="en">Selenium</h5>
+                            <h5 data-lang="en">Pandas</h5>
+                            <h5 data-lang="en">PySimpleGUI</h5>
+                            <h5 data-lang="en">English - Advanced</h5>
+                            <h5 data-lang="en">Excel - Intermediate</h5>
+                        </div>
+                        <div class="small-list">
+                            <h5 data-lang="pt">Java - Básico</h5>
+                            <h5 data-lang="pt">MySQL - Básico</h5>
+                            <h5 data-lang="pt">Postgrsql - Básico</h5>
+                            <h5 data-lang="pt">Alemão - Básico</h5>
+                            <h5 data-lang="pt">HTML - Intermediário</h5>
+                            <h5 data-lang="pt">CSS - Intermediário</h5>
+
+                            <h5 data-lang="en">Java - Basic</h5>
+                            <h5 data-lang="en">MySQL - Basic</h5>
+                            <h5 data-lang="en">Postgrsql - Basic</h5>
+                            <h5 data-lang="en">German - Basic</h5>
+                            <h5 data-lang="en">HTML - Intermediate</h5>
+                            <h5 data-lang="en">CSS - Intermediate</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-lista">
+                    <!-- Logos das habilidades/ certificações -->
+                    <table>
+                        <tr>
+                            <td><img src="Adicionais/brasil_flag.png"></td>
+                            <td><img src="Adicionais/alemanha_flag.png"></td>
+                            <td><img src="Adicionais/eua_flag.png"></td>
+                            <td><img src="Adicionais/excel_logo.png"></td>
+                            <td><img src="Adicionais/mysql_logo.png"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="Adicionais/html_logo.png"></td>
+                            <td><img src="Adicionais/css_logo.png"></td>
+                            <td><img src="Adicionais/php_logo.png"></td>
+                            <td><img src="Adicionais/java_logo.png"></td>
+                            <td><img src="Adicionais/github_logo.png"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="Adicionais/python_logo.png"></td>
+                            <td><img src="Adicionais/selenium_logo.png"></td>
+                            <td><img src="Adicionais/pandas_logo.png"></td>
+                            <td><img src="Adicionais/postgresql_logo.png"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!--- Experiência -> carrossel <div></div>-->
+            
+            <footer class="contact" id="contact">
+                <!--- Rodapé-->
+                <!--Contato-->
+                <h1 data-lang="pt">Entre em contato</h1>
+                <h1 data-lang="en">Please call me</h1>
+                <div class="redes">
+                    <div class="chama">
+                        <a href="butzenjvlb@gmail.com"><img src="Adicionais/email_icone.png"></a>
+                        <a href="butzenjvlb@gmail.com"><h3>Email</h3></a>
+                    </div>
+                    <div class="chama">
+                        <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-lellis-butzen-767805243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="Adicionais/linkedin_icone.png"></a>
+                        <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-lellis-butzen-767805243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><h3>João Butzen</h3></a>
+                    </div>
+                    <div class="chama">
+                        <img src="Adicionais/zap_icone.png">
+                        <h3>+55 (41) 98799-2869</h3>
+                    </div>
+                    <div class="chama">
+                        <img src="Adicionais/gps_icone.png">
+                        <h3>Curitiba - PR</h3>
+                    </div>
+                </div>
+            </footer>
+            <script src="script.js" defer></script>
+        </body>
+    </html>
